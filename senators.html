@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-IE"> <!-- Specifies language and country -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. Senators</title>
+    <link rel="stylesheet" href="./default.css"> <!-- Link to homepage stylesheet-->
+
+    </head>
+    <body>
+        <header>
+            <img class="Logo" src="./Images/US_Senate_Logo.png" alt="US Senate Logo" height="80px">
+            <h1>Senators of the United States of America</h1>
+        </header>
+
+        <!--Div to contain total number of senators per party.-->
+
+        <div id="totalSenators"></div>  
+
+        <!--Div contain leader senators grouped by party.-->
+
+        <div id="leaderSenators">
+            <img class="Logo_Left" src="./Images/Democrat_Logo.png" alt="Democrat Logo" width="80px" height="80px">
+            <img class="Logo_Right" src="./Images/Republican_Logo.png" alt="Republican Logo" width="80px" height="80px">
+            <h2>Senators in Leadership Roles</h2>
+            <div id="leaders"></div>
+            <!--<div id="leaderIndependents"></div> Removed as no independent leaders found. -->
+        </div>
+
+        <!--Div to contain all senators or those selected by filtering.-->
+
+        <div>
+            <h2>Browse Senators</h2>
+            <p>Hover over each box to view more information on each senator</p>
+            <label for="partyDropdown">Select Party:</label>
+            <select id="partyDropdown"></select>
+            <label for="stateDropdown">Select State:</label>
+            <select id="stateDropdown"></select>
+            <label for="rankDropdown">Select Senator Rank:</label>
+            <select id="rankDropdown"></select>
+
+            <div id="allSenators"></div>
+        </div>
+
+        <script src="senators.js"></script>
+    </body>
+</html>
